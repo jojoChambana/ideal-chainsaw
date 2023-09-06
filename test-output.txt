@@ -1,0 +1,304 @@
+
+> gift-transmittal@0.1.0 test
+> jest --onlyFailures --testPathPattern=DonationTypeForm.test.tsx
+
+  console.log
+    DonationForm props: { type: 'Cash' }
+
+      at DonationForm (app/components/donationForms/DonationTypeForm.tsx:27:11)
+
+  console.log
+    DonationForm props: { type: 'Cash' }
+
+      at DonationForm (app/components/donationForms/DonationTypeForm.tsx:27:11)
+
+  console.error
+    Error: Uncaught [TypeError: (0 , _reactHookForm.useForm) is not a function]
+        at reportException (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\helpers\runtime-script-errors.js:66:24)
+        at innerInvokeEventListeners (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:353:9)
+        at invokeEventListeners (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:286:3)
+        at HTMLUnknownElementImpl._dispatch (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:233:9)
+        at HTMLUnknownElementImpl.dispatchEvent (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:104:17)
+        at HTMLUnknownElement.dispatchEvent (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:241:34)
+        at Object.invokeGuardedCallbackDev (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:4213:16)
+        at invokeGuardedCallback (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:4277:31)
+        at beginWork$1 (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:27451:7)
+        at performUnitOfWork (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+        at workLoopSync (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+        at renderRootSync (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+        at performConcurrentWorkOnRoot (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:25738:74)
+        at flushActQueue (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react\cjs\react.development.js:2667:24)
+        at act (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react\cjs\react.development.js:2582:11)
+        at C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\@testing-library\react\dist\act-compat.js:46:25
+        at renderRoot (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\@testing-library\react\dist\pure.js:161:26)
+        at render (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\@testing-library\react\dist\pure.js:247:10)
+        at Object.<anonymous> (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\app\components\__tests__\DonationTypeForm.test.tsx:38:33)
+        at Promise.then.completed (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\utils.js:298:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\utils.js:231:10)
+        at _callCircusTest (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:316:40)
+        at async _runTest (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:252:3)
+        at async _runTestsForDescribeBlock (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:126:9)
+        at async _runTestsForDescribeBlock (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:121:9)
+        at async run (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:71:3)
+        at async runAndTransformResultsToJestFormat (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+        at async jestAdapter (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+        at async runTestInternal (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-runner\build\runTest.js:367:16)
+        at async runTest (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-runner\build\runTest.js:444:34) {
+      detail: TypeError: (0 , _reactHookForm.useForm) is not a function
+          at DonationForm (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\app\components\donationForms\DonationTypeForm.tsx:41:26)
+          at renderWithHooks (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+          at mountIndeterminateComponent (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+          at beginWork (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+          at HTMLUnknownElement.callCallback (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+          at HTMLUnknownElement.callTheUserObjectsOperation (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+          at innerInvokeEventListeners (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:350:25)
+          at invokeEventListeners (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:286:3)
+          at HTMLUnknownElementImpl._dispatch (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:233:9)
+          at HTMLUnknownElementImpl.dispatchEvent (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:104:17)
+          at HTMLUnknownElement.dispatchEvent (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:241:34)
+          at Object.invokeGuardedCallbackDev (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:4213:16)
+          at invokeGuardedCallback (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:4277:31)
+          at beginWork$1 (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:27451:7)
+          at performUnitOfWork (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+          at workLoopSync (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+          at renderRootSync (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+          at performConcurrentWorkOnRoot (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:25738:74)
+          at flushActQueue (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react\cjs\react.development.js:2667:24)
+          at act (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react\cjs\react.development.js:2582:11)
+          at C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\@testing-library\react\dist\act-compat.js:46:25
+          at renderRoot (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\@testing-library\react\dist\pure.js:161:26)
+          at render (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\@testing-library\react\dist\pure.js:247:10)
+          at Object.<anonymous> (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\app\components\__tests__\DonationTypeForm.test.tsx:38:33)
+          at Promise.then.completed (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\utils.js:298:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\utils.js:231:10)
+          at _callCircusTest (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:316:40)
+          at async _runTest (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:252:3)
+          at async _runTestsForDescribeBlock (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:126:9)
+          at async _runTestsForDescribeBlock (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:121:9)
+          at async run (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:71:3)
+          at async runAndTransformResultsToJestFormat (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+          at async jestAdapter (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+          at async runTestInternal (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-runner\build\runTest.js:367:16)
+          at async runTest (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-runner\build\runTest.js:444:34),
+      type: 'unhandled exception'
+    }
+
+      36 |
+      37 |     // Render the component and perform tests
+    > 38 |     const { getByText } = render(<DonationForm type="Cash" />);
+         |                                 ^
+      39 |
+      40 |     // Debugging the screen, remove this in production
+      41 |     screen.debug();
+
+      at VirtualConsole.<anonymous> (node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:70:28)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)
+      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)
+      at HTMLUnknownElement.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)
+      at Object.invokeGuardedCallbackDev (node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+      at invokeGuardedCallback (node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27451:7)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:46:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:161:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:247:10)
+      at Object.<anonymous> (app/components/__tests__/DonationTypeForm.test.tsx:38:33)
+
+  console.log
+    DonationForm props: { type: 'Cash' }
+
+      at DonationForm (app/components/donationForms/DonationTypeForm.tsx:27:11)
+
+  console.log
+    DonationForm props: { type: 'Cash' }
+
+      at DonationForm (app/components/donationForms/DonationTypeForm.tsx:27:11)
+
+  console.error
+    Error: Uncaught [TypeError: (0 , _reactHookForm.useForm) is not a function]
+        at reportException (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\helpers\runtime-script-errors.js:66:24)
+        at innerInvokeEventListeners (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:353:9)
+        at invokeEventListeners (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:286:3)
+        at HTMLUnknownElementImpl._dispatch (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:233:9)
+        at HTMLUnknownElementImpl.dispatchEvent (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:104:17)
+        at HTMLUnknownElement.dispatchEvent (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:241:34)
+        at Object.invokeGuardedCallbackDev (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:4213:16)
+        at invokeGuardedCallback (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:4277:31)
+        at beginWork$1 (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:27451:7)
+        at performUnitOfWork (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+        at workLoopSync (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+        at renderRootSync (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+        at recoverFromConcurrentError (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+        at performConcurrentWorkOnRoot (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+        at flushActQueue (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react\cjs\react.development.js:2667:24)
+        at act (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react\cjs\react.development.js:2582:11)
+        at C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\@testing-library\react\dist\act-compat.js:46:25
+        at renderRoot (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\@testing-library\react\dist\pure.js:161:26)
+        at render (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\@testing-library\react\dist\pure.js:247:10)
+        at Object.<anonymous> (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\app\components\__tests__\DonationTypeForm.test.tsx:38:33)
+        at Promise.then.completed (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\utils.js:298:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\utils.js:231:10)
+        at _callCircusTest (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:316:40)
+        at async _runTest (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:252:3)
+        at async _runTestsForDescribeBlock (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:126:9)
+        at async _runTestsForDescribeBlock (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:121:9)
+        at async run (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:71:3)
+        at async runAndTransformResultsToJestFormat (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+        at async jestAdapter (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+        at async runTestInternal (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-runner\build\runTest.js:367:16)
+        at async runTest (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-runner\build\runTest.js:444:34) {
+      detail: TypeError: (0 , _reactHookForm.useForm) is not a function
+          at DonationForm (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\app\components\donationForms\DonationTypeForm.tsx:41:26)
+          at renderWithHooks (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+          at mountIndeterminateComponent (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+          at beginWork (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+          at HTMLUnknownElement.callCallback (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:4164:14)
+          at HTMLUnknownElement.callTheUserObjectsOperation (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\generated\EventListener.js:26:30)
+          at innerInvokeEventListeners (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:350:25)
+          at invokeEventListeners (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:286:3)
+          at HTMLUnknownElementImpl._dispatch (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:233:9)
+          at HTMLUnknownElementImpl.dispatchEvent (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:104:17)
+          at HTMLUnknownElement.dispatchEvent (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:241:34)
+          at Object.invokeGuardedCallbackDev (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:4213:16)
+          at invokeGuardedCallback (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:4277:31)
+          at beginWork$1 (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:27451:7)
+          at performUnitOfWork (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+          at workLoopSync (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+          at renderRootSync (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+          at recoverFromConcurrentError (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+          at performConcurrentWorkOnRoot (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+          at flushActQueue (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react\cjs\react.development.js:2667:24)
+          at act (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\react\cjs\react.development.js:2582:11)
+          at C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\@testing-library\react\dist\act-compat.js:46:25
+          at renderRoot (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\@testing-library\react\dist\pure.js:161:26)
+          at render (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\@testing-library\react\dist\pure.js:247:10)
+          at Object.<anonymous> (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\app\components\__tests__\DonationTypeForm.test.tsx:38:33)
+          at Promise.then.completed (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\utils.js:298:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\utils.js:231:10)
+          at _callCircusTest (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:316:40)
+          at async _runTest (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:252:3)
+          at async _runTestsForDescribeBlock (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:126:9)
+          at async _runTestsForDescribeBlock (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:121:9)
+          at async run (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\run.js:71:3)
+          at async runAndTransformResultsToJestFormat (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+          at async jestAdapter (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+          at async runTestInternal (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-runner\build\runTest.js:367:16)
+          at async runTest (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\node_modules\jest-runner\build\runTest.js:444:34),
+      type: 'unhandled exception'
+    }
+
+      36 |
+      37 |     // Render the component and perform tests
+    > 38 |     const { getByText } = render(<DonationForm type="Cash" />);
+         |                                 ^
+      39 |
+      40 |     // Debugging the screen, remove this in production
+      41 |     screen.debug();
+
+      at VirtualConsole.<anonymous> (node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:70:28)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)
+      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)
+      at HTMLUnknownElement.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)
+      at Object.invokeGuardedCallbackDev (node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+      at invokeGuardedCallback (node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27451:7)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at recoverFromConcurrentError (node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:46:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:161:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:247:10)
+      at Object.<anonymous> (app/components/__tests__/DonationTypeForm.test.tsx:38:33)
+
+  console.error
+    The above error occurred in the <DonationForm> component:
+    
+        at DonationForm (C:\Users\josephc\Desktop\playground\NextJS\gift-transmittal\app\components\donationForms\DonationTypeForm.tsx:26:9)
+    
+    Consider adding an error boundary to your tree to customize error handling behavior.
+    Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+      36 |
+      37 |     // Render the component and perform tests
+    > 38 |     const { getByText } = render(<DonationForm type="Cash" />);
+         |                                 ^
+      39 |
+      40 |     // Debugging the screen, remove this in production
+      41 |     screen.debug();
+
+      at logCapturedError (node_modules/react-dom/cjs/react-dom.development.js:18687:23)
+      at update.callback (node_modules/react-dom/cjs/react-dom.development.js:18720:5)
+      at callCallback (node_modules/react-dom/cjs/react-dom.development.js:13923:12)
+      at commitUpdateQueue (node_modules/react-dom/cjs/react-dom.development.js:13944:9)
+      at commitLayoutEffectOnFiber (node_modules/react-dom/cjs/react-dom.development.js:23391:13)
+      at commitLayoutMountEffects_complete (node_modules/react-dom/cjs/react-dom.development.js:24688:9)
+      at commitLayoutEffects_begin (node_modules/react-dom/cjs/react-dom.development.js:24674:7)
+      at commitLayoutEffects (node_modules/react-dom/cjs/react-dom.development.js:24612:3)
+      at commitRootImpl (node_modules/react-dom/cjs/react-dom.development.js:26823:5)
+      at commitRoot (node_modules/react-dom/cjs/react-dom.development.js:26682:5)
+      at finishConcurrentRender (node_modules/react-dom/cjs/react-dom.development.js:25892:9)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25809:7)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:46:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:161:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:247:10)
+      at Object.<anonymous> (app/components/__tests__/DonationTypeForm.test.tsx:38:33)
+
+FAIL app/components/__tests__/DonationTypeForm.test.tsx
+  <DonationForm />
+    × renders without crashing (121 ms)
+
+  ● <DonationForm /> › renders without crashing
+
+    TypeError: (0 , _reactHookForm.useForm) is not a function
+
+      39 |   // }, [watchedFields]);
+      40 |
+    > 41 |   const methods = useForm<FormData>();
+         |                          ^
+      42 |
+      43 |   return (
+      44 |     <FormProvider {...methods}>
+
+      at DonationForm (app/components/donationForms/DonationTypeForm.tsx:41:26)
+      at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+      at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at recoverFromConcurrentError (node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:46:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:161:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:247:10)
+      at Object.<anonymous> (app/components/__tests__/DonationTypeForm.test.tsx:38:33)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        5.53 s
+Ran all test suites matching /DonationTypeForm.test.tsx/i.

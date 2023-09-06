@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+		"terminal.integrated.gpuAcceleration": "off"
+	}
+}

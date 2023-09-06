@@ -1,0 +1,21 @@
+{
+  "name": "Next.js Dev Container",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "runArgs": ["-u", "node"],
+  "customizations": {
+    "vscode": {
+      "extensions": ["formulahendry.auto-rename-tag"]
+    },
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact"
+    ]
+  },
+
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm install"
+}

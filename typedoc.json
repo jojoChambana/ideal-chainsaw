@@ -1,0 +1,6 @@
+{
+  "out": "docs",
+  "entryPoints": ["app"],
+  "entryPointStrategy": "expand",
+  "$schema": "https://typedoc.org/schema.json"
+}

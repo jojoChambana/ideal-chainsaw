@@ -1,0 +1,88 @@
+import React from "react";
+import {
+  RadioGroup,
+  FormControlLabel,
+  Radio,
+  Box,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
+import { Controller } from "react-hook-form";
+
+/**
+ * Type definition for the props of the CampusRadioInput component.
+ */
+type CampusRadioInputProps = {
+  control: any; // The control object from react-hook-form.
+};
+
+/**
+ * A functional component representing a group of radio buttons to select a campus.
+ * The selection will be displayed horizontally on desktop and vertically on mobile.
+ *
+ * @param control - The control object from react-hook-form.
+ * @returns JSX.Element - A rendered component with the radio buttons and campus address.
+ */
+const CampusRadioInput: React.FC<CampusRadioInputProps> = ({ control }) => {
+  //  console.log("CampusRadioInput is rendering");
+  const theme = useTheme();
+  // Check if the screen size is above the medium breakpoint (desktop)
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"), {
+    defaultMatches: true, // Default to desktop behavior
+  });
+
+  return (
+    <Controller
+      name="campus"
+      control={control}
+      defaultValue="UIUC" // Default checked option
+      render={({ field: { onChange, value } }) => (
+        <>
+          <Typography variant="body1">
+            Hand-deliver this Transmittal and Cash to:
+          </Typography>
+          <RadioGroup
+            row={isDesktop} // Set to true for desktop and false for mobile
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
+          >
+            <FormControlLabel
+              value="UIUC"
+              control={<Radio />}
+              label="Urbana-Champaign"
+            />
+            <FormControlLabel value="UIC" control={<Radio />} label="Chicago" />
+            <FormControlLabel
+              value="UIS"
+              control={<Radio />}
+              label="Springfield"
+            />
+          </RadioGroup>
+          <Box mt={2}>
+            <Typography variant="body1" component="pre">
+              {value === "UIUC"
+                ? `University of Illinois Urbana-Champaign
+Cash Receipts
+Harker Hall - M/C 386
+1305 West Green Street
+Urbana, IL 61801`
+                : value === "UIC"
+                ? `University of Illinois Chicago - OVCA
+SCE 750 S Halsted St. Rm. 550, M/C 100
+Chicago, IL 60607`
+                : value === "UIS"
+                ? `University of Illinois Springfield
+Business and Stewardship
+One University Plaza - PAC591
+Springfield, IL 62703`
+                : "Invalid campus selected"}
+            </Typography>
+          </Box>
+        </>
+      )}
+    />
+  );
+};
+
+export default CampusRadioInput;
